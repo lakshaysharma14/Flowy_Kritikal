@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import Navigation from './Components/Navigation';
+import Lpannel from './Components/Lpannel';
+import RightPannel from './Components/RightPannel';
+import appendscript from './Components/appendScript'
+import './flowy.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component
+{ 
+  componentDidMount()
+  {
+    appendscript('/flowy.min.js')
+    appendscript('/main.js')  
+  } 
+
+  render()
+  {
+      return(
+        <div>
+            <Navigation />
+            <Lpannel />
+            <RightPannel />
+         <div id="canvas">
+         </div>
+        </div>
+    );
+  }
 }
 
 export default App;
