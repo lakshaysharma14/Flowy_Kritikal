@@ -1,5 +1,5 @@
 # Kritikal Frontend Assignment
-## Webapp for Creating Flow Charts with ease
+## Webapp for Creating Flow Charts with Ease ( Ongoing Project)
 
 ## How To Start Wen App
 1.) First Clone this repository on your local machine.
